@@ -1,0 +1,113 @@
+app/public/local.php
+
+# -----------------------------------------------------------------
+# .gitignore for HTML CSS site
+
+#
+# By default all files are ignored.  You'll need to whitelist
+# any directories or files you want to include in the repo.
+#
+# To ignore uncommitted changes in a file that is already tracked, use 
+# git update-index --assume-unchanged
+#
+# To stop tracking a file that is currently tracked, use 
+# git rm --cached
+#
+# Change Log:
+# 20180808 unignore site.webmanifest
+# 20180714 unignore .phpcs.xml.dist
+# 20160309 Added favicon files as whitelisted files
+# 20150302 Added composer.json as a whitelisted file
+# 20150227 Created as fork of https://gist.github.com/salcode/9940509,
+#   this version ignores all files by default
+# -----------------------------------------------------------------
+
+# whitelist the root directory except the  node_modules directory
+/*
+!src
+!docs
+
+# whitelist everything in the "src" directory,:
+
+!src/js
+!src/js/module
+!src/js/views
+!src/index.js
+!src/index.html
+!src/img/*
+
+# whitelist everything in the "docs" directory,:
+
+!docs/css
+!docs/css/style.css
+!docs/img
+!docs/img/*.svg
+!docs/bundle.js
+!docs/index.html
+
+
+# ignore all files starting with . or ~
+.*
+~*
+
+# ignore node dependency directories (used by grunt)
+node_modules/
+
+# ignore OS generated files
+ehthumbs.db
+Thumbs.db
+
+# ignore Editor files
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# -------------------------
+# BEGIN Whitelisted Files
+# -------------------------
+
+# track these files, if they exist
+!package.json
+!webpack.js
+!.babelrc
+!.gitignore
+!.editorconfig
+!.phpcs.xml.dist
+!README.md
+!CHANGELOG.md
+!composer.json
+
+# track favicon files, if they exist
+!android-chrome-*.png
+!apple-touch-icon*.png
+!browserconfig.xml
+!favicon*.png
+!favicon*.ico
+!manifest.json
+!mstile-*.png
+!safari-pinned-tab.svg
+!site.webmanifest
+
